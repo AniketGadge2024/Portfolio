@@ -30,7 +30,7 @@ const Experiment = () => {
       if (!morphingInterval.current) {
         morphingInterval.current = setInterval(() => {
           setBorderRadius(generateRandomRadius());
-        }, 1000); // 🕒 morph every 0.5 seconds
+        }, 5000); // 🕒 morph every 0.5 seconds
       }
     };
 
@@ -47,7 +47,7 @@ const Experiment = () => {
 
       idleTimer.current = setTimeout(() => {
         startMorphing();
-      }, 2000); // 💤 2s idle before morphing starts
+      }, 5000); // 💤 2s idle before morphing starts
     };
 
     window.addEventListener('mousemove', handleMouseMove);
