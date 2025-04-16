@@ -1,0 +1,191 @@
+.Service-body{
+    width: 100%;
+    min-height: 100vh;
+}
+.title-service{
+    padding-top: 80px;
+}
+.Service-cateogery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Service-Content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.605);
+}
+
+
+
+
+  .Sub-content-1 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCE8E8; /* for Business */
+    border-radius: 30% 70% 72% 28% / 30% 55% 45% 70%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .Sub-content-2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1F8F7; /* for E-Commerce */
+    border-radius: 39% 61% 33% 67% / 64% 35% 65% 36%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .Sub-content-3 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF3E0; /* for Portfolio */
+    border-radius: 58% 42% 67% 33% / 64% 60% 40% 36%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .Sub-content-4 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EAF6; /* light indigo for Educational */
+    border-radius: 60% 40% 60% 40% / 50% 50% 50% 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .Sub-content-5 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCE4EC; /* light pink for Event & Wedding */
+    border-radius: 60% 40% 60% 40% / 50% 50% 50% 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .Sub-content-6 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0F7FA; /* light cyan for Blog & News */
+    border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  /* Hover effects */
+  .Service-Content:hover .Sub-content-1 {
+    background-color: #FFD1D1;
+    transform: scale(1.05);
+    border-radius: 58% 42% 67% 33% / 64% 60% 40% 36%;
+  }
+  
+  .Service-Content:hover .Sub-content-2 {
+    background-color: #CCF1EF;
+    transform: scale(1.05);
+    border-radius: 30% 70% 72% 28% / 30% 55% 45% 70%;
+  }
+  
+  .Service-Content:hover .Sub-content-3 {
+    background-color: #FFE0B2;
+    transform: scale(1.05);
+    border-radius: 39% 61% 33% 67% / 64% 35% 65% 36%;
+  }
+  
+  .Service-Content:hover .Sub-content-4 {
+    background-color: #C5CAE9;
+    transform: scale(1.05);
+    border-radius: 39% 61% 33% 67% / 64% 35% 65% 36%;
+  }
+  
+  .Service-Content:hover .Sub-content-5 {
+    background-color: #F8BBD0;
+    transform: scale(1.05);
+    border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%;
+  }
+  
+  .Service-Content:hover .Sub-content-6 {
+    background-color: #B2EBF2;
+    transform: scale(1.05);
+    border-radius:60% 40% 60% 40% / 50% 50% 50% 50%;
+  }
+  
+
+.content-title{
+    font-family: "Raleway", sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+  .content-para{
+    font-family: "Roboto", sans-serif;
+font-size: 11px;
+    font-optical-sizing: auto;
+    text-align: center;
+  }
+
+  .Main-service-title{
+    font-family: "Raleway", sans-serif;
+    margin-top: 10px;
+    font-weight: 550;
+    text-align: center;
+  }
+   .Main-service-para{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+        font-optical-sizing: auto;
+        text-align: center;
+  }
+
+  
+  @media (max-width: 768px) {
+    .Service-Content {
+      width: 43%;
+      height: 200px;
+    }
+    .content-title{
+font-size: 13px;
+font-weight: 600;
+    }
+    .Sub-content-1,
+    .Sub-content-2,
+    .Sub-content-3,
+    .Sub-content-4,
+    .Sub-content-5,
+    .Sub-content-6 {
+      display: flex;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-para{
+font-size: 7px;
+    }
+    .Service-Content{
+      padding: 2px;
+    }
+    .Main-service-para{
+      font-size: 13px;
+    }
+  }

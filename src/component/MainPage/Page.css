@@ -1,0 +1,65 @@
+.Body-Main{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(235, 234, 232); */
+    /* background-image: url('./Img/bacck.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+
+.Main-content {
+    animation: zoomIn 0.8s ease-out;
+  }
+
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  .Title-name{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin: 0%;
+    font-size: 35px;
+    /* color: white; */
+  }
+  .title-para{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    /* color: white; */
+  }
+
+  .Main-About-me{
+    font-family: "Roboto", sans-serif;
+font-size: 15px;
+    font-optical-sizing: auto;
+  }
+
+  @media (max-width: 768px) {
+    .Title-name{
+      font-size: 25px;
+    }
+    .title-para{
+      font-size: 13px;
+    }
+  }
+
+  
+  .animation-div{
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+  position: fixed;
+  }
