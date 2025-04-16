@@ -7,7 +7,7 @@ import Experiment from '../Experiment';
 const MainPage = () => {
   const navigate = useNavigate();
 
-  // Ask for notification permission on mount
+  // Ask for notification permission on page load
   useEffect(() => {
     if ("Notification" in window) {
       Notification.requestPermission().then(permission => {
@@ -16,26 +16,23 @@ const MainPage = () => {
     }
   }, []);
 
-  // Send custom notification
-  const sendNotification = () => {
+  // Trigger a notification
+  const handleNotification = () => {
     if ("Notification" in window && Notification.permission === "granted") {
-      new Notification("🔔 New Message from Aniket", {
-        body: "Thanks for visiting! Hope you're enjoying the site.",
-        icon: "/favicon.ico", // You can update this icon
+      new Notification("Hello from Aniket Gadge!", {
+        body: "Check out my About page!",
+        icon: "/favicon.ico", // Replace with your icon path if available
       });
     } else if (Notification.permission !== "denied") {
       Notification.requestPermission().then(permission => {
         if (permission === "granted") {
-          new Notification("🔔 New Message from Aniket", {
-            body: "Thanks for visiting! Hope you're enjoying the site.",
+          new Notification("Hello from Aniket Gadge!", {
+            body: "Check out my About page!",
             icon: "/favicon.ico",
           });
         }
       });
     }
-  };
-
-  const goToAboutPage = () => {
     navigate('/About');
   };
 
@@ -49,15 +46,8 @@ const MainPage = () => {
           <p className='text-center title-para'>
             I’m a full-stack web developer specializing in building modern, responsive, and scalable web applications.
           </p>
-
-          {/* Navigate to About Page */}
-          <button onClick={goToAboutPage} className='btn btn-success w-25 mb-2'>
+          <button onClick={handleNotification} className='btn btn-success w-25'>
             <span className='Main-About-me'>About Me</span>
-          </button>
-
-          {/* Send Notification */}
-          <button onClick={sendNotification} className='btn btn-primary w-25'>
-            <span className='Main-About-me'>Send Notification</span>
           </button>
         </div>
       </div>
