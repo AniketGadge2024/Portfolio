@@ -42,7 +42,20 @@ const MainPage = () => {
       <Navigation />
       <div className='d-flex justify-content-center align-items-center Body-Main'>
         <div className='d-flex flex-column justify-content-center align-items-center Main-content'>
-          <h4 className='Title-name'>Aniket Gadge</h4>
+          <h4 className='Title-name'>
+            <span className='Title-span' >A</span>
+            <span className='Title-span' >N</span>
+            <span className='Title-span' >I</span>
+            <span className='Title-span' >K</span>
+            <span className='Title-span' >E</span>
+            <span className='Title-span' >T</span>
+            <span className='Title-span' ><pre> </pre> </span>
+            <span className='Title-span' >G</span>
+            <span className='Title-span' >A</span>
+            <span className='Title-span' >D</span>
+            <span className='Title-span' >G</span>
+            <span className='Title-span' >E</span>
+            </h4>
           <div className='animation-div'>
             {/* <Experiment /> */}
             <div className='animated-1'></div>
