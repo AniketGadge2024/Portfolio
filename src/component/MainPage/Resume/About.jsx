@@ -64,6 +64,7 @@ description: 'Created an interactive 4-digit number guessing game using React, e
       </p>
 
       <div className="row w-75 profile-project-section">
+    
         <div className="col-md-6 Content-div-1">
           <img src={""} alt='phto' className="ME-Profile" />
         </div>

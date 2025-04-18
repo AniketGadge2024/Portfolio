@@ -15,10 +15,10 @@ const navigate = useNavigate();
 
       
       <div className='d-none d-md-flex'>
-        <div onClick={()=>navigate('/')} className='Nav-items'><span>Home</span> <div className='indicator-span'></div></div>
-        <div onClick={()=>navigate('/About')} className='Nav-items'><span>About</span> <div className='indicator-span'></div></div>
-        <div onClick={()=>navigate('/Service')} className='Nav-items'><span>Service</span> <div className='indicator-span'></div></div>
-        <div className='Nav-items'><span>Contact</span> <div className='indicator-span'></div></div>
+        <div onClick={()=>navigate('/')} className='Nav-items'><span className='.indicator-span' >Home</span> </div>
+        <div onClick={()=>navigate('/About')} className='Nav-items'><span>About</span> </div>
+        <div onClick={()=>navigate('/Service')} className='Nav-items'><span>Service</span> </div>
+        <div className='Nav-items'><span>Contact</span></div>
       </div>
 
       
